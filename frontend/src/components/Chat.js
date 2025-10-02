@@ -12,7 +12,7 @@ const Chat = () => {
 
     setMessages([...messages, { role: 'user', content: prompt }]);
     try {
-      const res = await axios.post('http://localhost:5000/api/chat', { prompt });
+      const res = await axios.post('https://mini-ai-uvzl.onrender.com', { prompt });
       setMessages(prev => [
         ...prev,
         { role: 'assistant', content: res.data.response }
