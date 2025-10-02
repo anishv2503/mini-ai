@@ -16,7 +16,7 @@ As part of the technical assessment, this project demonstrates:
 - Modular backend API with clean separation of routes, controllers, and services.
 - Proper API design with error handling for failure cases.
 - Responsive frontend chat interface built with React.
-- Environment variable management with `.env` for API keys.
+- Environment variable management via a `.env` file for API keys.
 
 ## Tech Stack
 
@@ -28,26 +28,58 @@ As part of the technical assessment, this project demonstrates:
 
 ### 1. Clone the repo
 
+git clone https://github.com/anishv2503/mini-ai.git
+cd mini-ai
+
+text
+
 ### 2. Setup Backend
 
-Create a `.env` file in the `backend` folder with your OPENROUTER_API_KEY
+cd backend
+npm install
+
+text
+
+Create a `.env` file in the `backend` folder with your OpenAI API key:
+
+OPENROUTER_API_KEY=your_openai_api_key_here
+
+text
 
 Start the backend server:
+
+npm start
+
+text
+
 The backend runs on `http://localhost:5000`.
 
 ### 3. Setup Frontend
 
 In a new terminal window:
+
+cd frontend
+npm install
+npm start
+
+text
+
 The frontend runs on `http://localhost:3000`.
 
 ### 4. Usage
 
 - Open your browser to `http://localhost:3000`.
 - Enter your prompt in the chatbox.
-- Receive ChatGPT-driven AI responses in real time.
+- Receive ChatGPT-driven responses in real time.
 
 ## Code Quality & API Design
 
 - Backend code is divided into modular folders: `routes`, `controllers`, and `services`.
 - Errors are handled gracefully with clear response messages.
-- Frontend uses React state hooks for dynamic chat UI updates.
+- Frontend uses React state hooks for dynamic UI updates.
+
+---
+
+Replace `your_openai_api_key_here` in the `.env` file with your actual API key before running the backend server.
+
+---
